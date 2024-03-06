@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightSaber</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div name="container" class="flex flex-col place-content-center items-center h-screen bg-cyan-900">
+        <div name="Botones"
+            class="flex flex-col place-content-center items-center gap-4 bg-cyan-700 h-3/5 w-3/4 rounded-xl">
+            <input id="metodo" type="text" value="192.168.114.116"
+                class="rounded boton">
+            <input type="button" id="conectar" value="Conectar" onclick="Conectar(this)" class="rounded boton">
+            <input type="color" disabled style="color: grey;" id="Color" value="#0000ff" onchange="Color(this)"
+                class="rounded boton">
+            <input type="button" id="mode" disabled style="color: grey;" value="Modo: Color Solido"
+                onclick="CambiarModo(this)" class="rounded boton">
+            <input type="button" id="Desconectar" value="Desconectar" disabled style="color: grey;"
+                onclick="Desconectar()" class="rounded boton">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
